@@ -1,9 +1,10 @@
 <?php
 
+// returns array of routes like   urlPath/parameters => controller/method/parameters
 return array (
 
   'Eshopper/product/([0-9]+)' => 'product/view/$1', // actionView в ProductController
-  'Eshopper/catalog/page-([0-9]+)' => 'catalog/index/$1', 
+  'Eshopper/catalog/page-([0-9]+)' => 'catalog/index/$1',
   'Eshopper/catalog' => 'catalog/index',      // actionIndex in CatalogController
 
   'Eshopper/category/([0-9]+)/page-([0-9]+)' => 'catalog/category/$1/$2', // actionCategory in CatalogController

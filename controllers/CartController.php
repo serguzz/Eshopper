@@ -23,7 +23,7 @@ class CartController
     {
         // Удалить товар из корзины
         Cart::deleteProduct($id);
-        
+
         // Возвращаем пользователя на страницу
         header("Location: /Eshopper/cart/");
     }
