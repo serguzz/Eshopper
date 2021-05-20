@@ -38,8 +38,8 @@
                                           <div class="productinfo text-center">
                                               <img src="<?php echo Product::getImage($product['id']); ?>" alt="" />
                                               <h2><?php echo $product['price'];?></h2>
-                                              <a href="/Eshopper/product/<?php echo $product['id']?>">
-                                                <?php echo 'id='.$product['id'].' '.$product['name'];?>
+                                              <a href="product/<?php echo $product['id']?>">
+                                                <?php echo 'id= '.$product['id'].'<br> '.$product['name'];?>
                                               </a>
                                               <a href=""><p><?php echo 'Категория: '.Product::getCategoryName($product['id']);?></p>
                                               </a>
